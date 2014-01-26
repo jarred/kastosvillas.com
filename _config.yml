@@ -1,1 +1,2 @@
-assets_dir: http://localhost:4000
+assets_dir: http://localhost:4000/assets
+exclude: [config.rb, readme.md]

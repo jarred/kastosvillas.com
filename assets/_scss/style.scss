@@ -1,3 +1,21 @@
+@import "libs/_normalize";
+@import "libs/_leaflet";
+
+$black: #222;
+$sans: "Helvetica Neue", Sans-Serif;
+$serif: Georgia, "Times New Roman", Serif;
+
+@import "ui/_map";
+@import "ui/_nav";
+
 html{
-	background-color: #F00;
+	font-size: 13px;
+}
+
+#left{
+	width: 50%;
+}
+
+.hide{
+	display: none;
 }

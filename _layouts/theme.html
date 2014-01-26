@@ -9,10 +9,54 @@
         <title>Kastos Villas</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{{ site.assets_dir }}/assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.assets_dir }}/css/style.css">
     </head>
     <body>
+        <div id="fixed-nav" class="hide">
+            <ul>
+                <li><a href="#">About the Island</a></li>
+                <li><a href="#">About the Villas</a></li>
+                <li><a href="#">Accommodation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="left">
+            <div id="nav" class="window-height js-extend" data-view="NavView">
+                <h1 class="logo"><a href="/"><img src="{{ site.assets_dir }}/images/logo-black.png"></img></a></h1>
+                <hr />
+                <p>Monocle ipsum dolor sit amet comme des Garçons essential perfect Swiss the highest quality impeccable Fast Lane espresso joy Scandinavian soft power Marylebone. Delightful hub Melbourne sharp concierge.</p>
+                <ul>
+                    <li><a href="#">About the Island</a></li>
+                    <li><a href="#">About the Villas</a></li>
+                    <li><a href="#">Accommodation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="empty window-height"></div>
+            <div id="posts">
+                {block:Posts}
+                <div class="post" id="post_{PostID}" data-id="{PostID}">
+
+                </div>
+                {/block:Posts}
+            </div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+            <div class="empty window-height"></div>
+        </div>
+        
+        <div id="map" class="js-extend" data-view="MapView"></div>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqFxhN4iTpS2CXEj-VZiQ9XYYeFKuzI7k&sensor=false"></script>
+        <script type="text/javascript" src="{{ site.assets_dir }}/js/libs.js"></script>
+        <script type="text/javascript" src="{{ site.assets_dir }}/js/app.js"></script>
         <script>
+            window.KastosVillas.App.init();
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
