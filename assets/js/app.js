@@ -2,7 +2,7 @@
 (function() {
   var KV;
 
-  KV = window.KastosVillas = {};
+  KV = window.KastosVillas || (window.KastosVillas = {});
 
   KV.Views = {};
 
@@ -54,9 +54,10 @@
       this.map = L.map('map', {
         scrollWheelZoom: false,
         center: [38.5646649, 20.905957400000034],
-        zoom: 3
+        zoom: 3,
+        styles: KV.MapStyle
       });
-      googleLayer = new L.Google('SATELLITE');
+      googleLayer = new L.Google('ROADMAP');
       this.map.addLayer(googleLayer);
       return this.o.appModel.bind('change-step', this.setZoom);
     },

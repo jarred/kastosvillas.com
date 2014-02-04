@@ -7,9 +7,10 @@ KV.Views.MapView = Backbone.View.extend
 			scrollWheelZoom: false
 			center: [38.5646649, 20.905957400000034]
 			zoom: 3
+			styles: KV.MapStyle
 
-		# googleLayer = new L.Google('ROADMAP');
-		googleLayer = new L.Google('SATELLITE');
+		googleLayer = new L.Google('ROADMAP');
+		# googleLayer = new L.Google('SATELLITE');
 
 		@map.addLayer(googleLayer);
 

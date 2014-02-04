@@ -6,7 +6,7 @@
 
 ## Libs
 
-`uglifyjs -o assets/js/libs.js assets/js/libs/modernizr.js assets/js/libs/jquery.js assets/js/libs/leaflet.js assets/js/libs/underscore.js assets/js/libs/backbone.js assets/js/libs/leaflet-google.js assets/js/libs/greensock/TweenMax.js`
+`uglifyjs -o assets/js/libs.js assets/js/libs/modernizr.js assets/js/libs/jquery.js assets/js/libs/leaflet.js assets/js/libs/underscore.js assets/js/libs/backbone.js assets/js/libs/leaflet-google.js assets/js/libs/greensock/TweenMax.js assets/js/libs/map-style.js`
 
 ## Coffescript
 

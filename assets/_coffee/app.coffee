@@ -1,4 +1,4 @@
-KV = window.KastosVillas = {}
+KV = window.KastosVillas ||= {}
 KV.Views = {}
 
 KV.App =

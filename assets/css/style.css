@@ -927,37 +927,41 @@ table {
 
 /* line 3, ../_scss/ui/_nav.scss */
 #nav {
+  background-image: url("/assets/images/intro-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
-/* line 6, ../_scss/ui/_nav.scss */
+/* line 10, ../_scss/ui/_nav.scss */
 #nav h1.logo {
   font: 600 100px/100px Georgia, "Times New Roman", Serif;
-  padding: 30% 30% 0% 30%;
+  padding: 14% 30% 26% 30%;
   margin: 0px;
   text-align: center;
 }
-/* line 11, ../_scss/ui/_nav.scss */
+/* line 15, ../_scss/ui/_nav.scss */
 #nav h1.logo img {
   max-width: 100%;
 }
-/* line 14, ../_scss/ui/_nav.scss */
+/* line 18, ../_scss/ui/_nav.scss */
 #nav h1.logo .break {
   display: block;
 }
-/* line 17, ../_scss/ui/_nav.scss */
+/* line 21, ../_scss/ui/_nav.scss */
 #nav h1.logo a {
   text-decoration: none;
   color: #222222;
 }
-/* line 22, ../_scss/ui/_nav.scss */
+/* line 26, ../_scss/ui/_nav.scss */
 #nav p {
   text-align: center;
   margin: 40px 26%;
   font: 400 18px/22px Georgia, "Times New Roman", Serif;
-  color: #AAA;
+  color: #FFF;
 }
-/* line 28, ../_scss/ui/_nav.scss */
+/* line 32, ../_scss/ui/_nav.scss */
 #nav ul {
   margin: 0px;
   padding: 0px;
@@ -966,11 +970,11 @@ table {
   left: 20px;
   right: 20px;
 }
-/* line 35, ../_scss/ui/_nav.scss */
-#nav ul a {
-  color: #222222;
-}
 /* line 39, ../_scss/ui/_nav.scss */
+#nav ul a {
+  color: #FFF;
+}
+/* line 43, ../_scss/ui/_nav.scss */
 #nav hr {
   border: 0px;
   height: 1px;
@@ -978,12 +982,13 @@ table {
   margin: 40px 160px 0px;
 }
 
-/* line 48, ../_scss/ui/_nav.scss */
+/* line 52, ../_scss/ui/_nav.scss */
 #fixed-nav ul,
 #nav ul {
   text-align: center;
+  font: 400 16px/20px 'Theinhardt-Bold';
 }
-/* line 50, ../_scss/ui/_nav.scss */
+/* line 55, ../_scss/ui/_nav.scss */
 #fixed-nav ul li,
 #nav ul li {
   margin: 0px;
@@ -994,18 +999,18 @@ table {
   vertical-align: middle;
   margin-right: 20px;
 }
-/* line 56, ../_scss/ui/_nav.scss */
+/* line 61, ../_scss/ui/_nav.scss */
 #fixed-nav ul li a,
 #nav ul li a {
   text-decoration: none;
 }
-/* line 59, ../_scss/ui/_nav.scss */
+/* line 64, ../_scss/ui/_nav.scss */
 #fixed-nav ul li:last-child,
 #nav ul li:last-child {
   margin-right: 0px;
 }
 
-/* line 65, ../_scss/ui/_nav.scss */
+/* line 70, ../_scss/ui/_nav.scss */
 #fixed-nav {
   position: fixed;
   left: 0px;
@@ -1014,16 +1019,16 @@ table {
   background-color: #222222;
   height: 72px !important;
 }
-/* line 72, ../_scss/ui/_nav.scss */
+/* line 77, ../_scss/ui/_nav.scss */
 #fixed-nav ul {
   position: static;
   margin-top: 20px;
 }
-/* line 76, ../_scss/ui/_nav.scss */
+/* line 81, ../_scss/ui/_nav.scss */
 #fixed-nav ul li a {
   color: #FFF;
 }
-/* line 81, ../_scss/ui/_nav.scss */
+/* line 86, ../_scss/ui/_nav.scss */
 #fixed-nav h1, #fixed-nav p {
   display: none;
 }

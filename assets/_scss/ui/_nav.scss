@@ -1,11 +1,15 @@
 @import "compass/css3/inline-block";
 
 #nav{
+	background-image: url('/assets/images/intro-bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
 	z-index: 1;
 	h1.logo{
 		font: 600 100px/100px $serif;
-		padding: 30% 30% 0% 30%;
+		padding: 14% 30% 26% 30%;
 		margin: 0px;
 		text-align: center;
 		img{
@@ -23,7 +27,7 @@
 		text-align: center;
 		margin: 40px 26%;
 		font: 400 18px/22px $serif;
-		color: #AAA;
+		color: #FFF;
 	}
 	ul{
 		margin: 0px;
@@ -33,7 +37,7 @@
 		left: 20px;
 		right: 20px;
 		a{
-			color: $black;
+			color: #FFF;
 		}
 	}
 	hr{
@@ -47,6 +51,7 @@
 #nav{
 	ul{
 		text-align: center;
+		font: 400 16px/20px 'Theinhardt-Bold';
 		li{
 			margin: 0px;
 			padding: 0px;
