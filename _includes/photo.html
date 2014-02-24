@@ -1,0 +1,9 @@
+{block:Photo}
+<div class="image">
+	<img src="{PhotoURL-500}" alt="{PhotoAlt}" {block:HighRes}class="hide"{/block:HighRes} />
+	{block:HighRes}
+	<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+	{/block:HighRes}
+	{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+</div>
+{/block:Photo}

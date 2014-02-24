@@ -1,0 +1,57 @@
+#left{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 240px;
+	z-index: 100;
+	a.logo{
+		display: block;
+		background-color: #FFF;
+		width: 239px;
+		height: 239px;
+		position: relative;
+		.image{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			bottom: 20px;
+			left: 20px;
+			background: url('../images/logo-black.png') no-repeat center center;
+			background-size: contain;
+		}
+		&:hover{
+			background-color: $black;
+			.image{
+				background-image: url('../images/logo-white.png');
+			}
+		}
+	}
+	.nav{
+		width: 239px;
+		height: 229px;
+		background-color: $black;
+	}
+	ul,
+	li{
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	ul{
+		padding: 20px;
+	}
+	a{
+		font: 400 28px/34px $script;
+		color: #FFF;
+		text-decoration: none;
+		&:hover{
+			color: #666;
+		}
+	}
+}
+
+#posts{
+	padding-left: 240px;
+	padding-top: 40px;
+	position: relative;
+}

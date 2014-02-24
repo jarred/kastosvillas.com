@@ -1,0 +1,83 @@
+@mixin breakpoint($point) {
+	@if $point == superwide {
+		@media (min-width: 1600px){ @content; }
+	}
+	@if $point == wide {
+		@media (min-width: 1200px){ @content; }
+	}
+  @if $point == desktop {
+    @media (min-width: 979px) { @content; }
+  }
+  @if $point == tablet {
+    @media (min-width: 767px) and (max-width: 979px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 767px) { @content; }
+  }
+}
+
+.set{
+	clear: both;
+	max-width: 1200px;
+	@include center-block;
+	.left{
+		width: 50%;
+		float: left;
+	}
+	.right{
+		width: 50%;
+		float: right;
+	}
+	@include breakpoint(mobile){
+		.left,
+		.right{
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+.square{
+	overflow: hidden;
+	height: 30px;
+	width: 100%;
+	padding-bottom: 47%;
+	position: relative;
+	.internal{
+		position: absolute;
+		top: $margin;
+		left: $margin;
+		right: $margin;
+		bottom: 0px;
+	}
+	&.left .internal{
+		right: $margin / 2;
+	}
+	&.right .internal{
+		left: $margin / 2;
+	}
+	@include breakpoint(mobile){
+		padding-bottom: 80%;
+		.internal{
+			left: 20px;
+			top: 20px;
+			right: 20px;
+			bottom: 0px;
+		}
+		&.left .internal{
+			right: 20px;
+		}
+		&.right .internal{
+			left: 20px;
+		}
+		&.static-on-mobile{
+			padding-bottom: 0px;
+			height: auto;
+			.internal{
+				position: static;
+				margin: 20px;
+				padding: 20px;
+			}
+		}
+	}
+}

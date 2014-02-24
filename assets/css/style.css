@@ -911,139 +911,187 @@ table {
   border: 1px solid #666;
 }
 
-/* line 1, ../_scss/ui/_map.scss */
-#map {
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  left: 50%;
-}
-
-/* line 8, ../_scss/ui/_map.scss */
-.leaflet-container {
-  background: #00F;
-}
-
-/* line 3, ../_scss/ui/_nav.scss */
-#nav {
-  background-image: url("/assets/images/intro-bg.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-/* line 10, ../_scss/ui/_nav.scss */
-#nav h1.logo {
-  font: 600 100px/100px Georgia, "Times New Roman", Serif;
-  padding: 14% 30% 26% 30%;
-  margin: 0px;
-  text-align: center;
-}
-/* line 15, ../_scss/ui/_nav.scss */
-#nav h1.logo img {
-  max-width: 100%;
-}
-/* line 18, ../_scss/ui/_nav.scss */
-#nav h1.logo .break {
-  display: block;
-}
-/* line 21, ../_scss/ui/_nav.scss */
-#nav h1.logo a {
-  text-decoration: none;
-  color: #222222;
-}
-/* line 26, ../_scss/ui/_nav.scss */
-#nav p {
-  text-align: center;
-  margin: 40px 26%;
-  font: 400 18px/22px Georgia, "Times New Roman", Serif;
-  color: #FFF;
-}
-/* line 32, ../_scss/ui/_nav.scss */
-#nav ul {
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  bottom: 40px;
-  left: 20px;
-  right: 20px;
-}
-/* line 39, ../_scss/ui/_nav.scss */
-#nav ul a {
-  color: #FFF;
-}
-/* line 43, ../_scss/ui/_nav.scss */
-#nav hr {
-  border: 0px;
-  height: 1px;
-  background-color: #222222;
-  margin: 40px 160px 0px;
-}
-
-/* line 52, ../_scss/ui/_nav.scss */
-#fixed-nav ul,
-#nav ul {
-  text-align: center;
-  font: 400 16px/20px 'Theinhardt-Bold';
-}
-/* line 55, ../_scss/ui/_nav.scss */
-#fixed-nav ul li,
-#nav ul li {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
+/* Placeholder text
+  ========================================================================== */
+/* Box Model
+  ========================================================================== */
+/* Usage */
+/* Border Radius
+  ========================================================================== */
+/* Opacity
+  ========================================================================== */
+/* Center-align a block level element
+  ========================================================================== */
+/* Text overflow
+  ========================================================================== */
+/* Cross browser inline block
+  ========================================================================== */
+/* Usage */
+/* line 118, ../_scss/helpers/_misc.scss */
+.icon {
   display: -moz-inline-stack;
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-/* line 61, ../_scss/ui/_nav.scss */
-#fixed-nav ul li a,
-#nav ul li a {
-  text-decoration: none;
-}
-/* line 64, ../_scss/ui/_nav.scss */
-#fixed-nav ul li:last-child,
-#nav ul li:last-child {
-  margin-right: 0px;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
 }
 
-/* line 70, ../_scss/ui/_nav.scss */
-#fixed-nav {
+/* line 14, ../_scss/helpers/_mixin-clearfix.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 5, ../_scss/helpers/_mixin-clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 9, ../_scss/helpers/_mixin-clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 1, ../_scss/ui/_map.scss */
+.bg {
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  width: 100%;
+  pointer-events: none;
+}
+/* line 11, ../_scss/ui/_map.scss */
+.bg .top {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 10000px;
+}
+/* line 16, ../_scss/ui/_map.scss */
+.bg .top .division {
+  float: left;
+  width: 239px;
+  text-align: center;
+  border-right: 1px solid #AAA;
+  font: 400 11px/20px Sans-Serif;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+/* line 25, ../_scss/ui/_map.scss */
+.bg .left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+/* line 29, ../_scss/ui/_map.scss */
+.bg .left .division {
+  font: 400 11px/239px Sans-Serif;
+  border-bottom: 1px solid #AAA;
+  padding: 0px 2px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+/* line 1, ../_scss/ui/_left.scss */
+#left {
   position: fixed;
   left: 0px;
   top: 0px;
-  right: 50%;
+  width: 240px;
+  z-index: 100;
+}
+/* line 7, ../_scss/ui/_left.scss */
+#left a.logo {
+  display: block;
+  background-color: #FFF;
+  width: 239px;
+  height: 239px;
+  position: relative;
+}
+/* line 13, ../_scss/ui/_left.scss */
+#left a.logo .image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: url("../images/logo-black.png") no-repeat center center;
+  background-size: contain;
+}
+/* line 22, ../_scss/ui/_left.scss */
+#left a.logo:hover {
   background-color: #222222;
-  height: 72px !important;
 }
-/* line 77, ../_scss/ui/_nav.scss */
-#fixed-nav ul {
-  position: static;
-  margin-top: 20px;
+/* line 24, ../_scss/ui/_left.scss */
+#left a.logo:hover .image {
+  background-image: url("../images/logo-white.png");
 }
-/* line 81, ../_scss/ui/_nav.scss */
-#fixed-nav ul li a {
+/* line 29, ../_scss/ui/_left.scss */
+#left .nav {
+  width: 239px;
+  height: 229px;
+  background-color: #222222;
+}
+/* line 35, ../_scss/ui/_left.scss */
+#left ul,
+#left li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 40, ../_scss/ui/_left.scss */
+#left ul {
+  padding: 20px;
+}
+/* line 43, ../_scss/ui/_left.scss */
+#left a {
+  font: 400 28px/34px "Verveine-Regular", Georgia, "Times New Roman", Serif;
   color: #FFF;
+  text-decoration: none;
 }
-/* line 86, ../_scss/ui/_nav.scss */
-#fixed-nav h1, #fixed-nav p {
-  display: none;
+/* line 47, ../_scss/ui/_left.scss */
+#left a:hover {
+  color: #666;
 }
 
-/* line 11, ../_scss/style.scss */
+/* line 53, ../_scss/ui/_left.scss */
+#posts {
+  padding-left: 240px;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* line 1, ../_scss/ui/_post.scss */
+.post {
+  float: left;
+  margin-bottom: 240px;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 7, ../_scss/ui/_post.scss */
+.post.photo {
+  width: 720px;
+}
+/* line 9, ../_scss/ui/_post.scss */
+.post.photo .image {
+  margin: 20px;
+}
+/* line 11, ../_scss/ui/_post.scss */
+.post.photo .image img {
+  display: block;
+  width: 100%;
+}
+
+/* line 20, ../_scss/style.scss */
 html {
   font-size: 13px;
+  background: #f9f9f9 url("../images/grid-lines.png") repeat top left;
 }
 
-/* line 15, ../_scss/style.scss */
-#left {
-  width: 50%;
-}
-
-/* line 19, ../_scss/style.scss */
+/* line 25, ../_scss/style.scss */
 .hide {
-  display: none;
+  display: none !important;
 }

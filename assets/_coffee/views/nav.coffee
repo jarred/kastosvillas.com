@@ -5,6 +5,7 @@ KV.Views.NavView = Backbone.View.extend
 	
 	initialize: (@o) ->
 		_.bindAll @, 'scroll', 'setup'
+		return
 		@setup()
 		$(document).bind 'scroll', @scroll
 		$(window).on 'resize', @setup

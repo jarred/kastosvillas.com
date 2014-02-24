@@ -1,0 +1,7 @@
+.btn{
+	@include inline-block;
+	padding: $margin / 2;
+	background-color: #000;
+	text-decoration: none;
+	color: #FFF;
+}

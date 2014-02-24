@@ -75,6 +75,7 @@
     initialize: function(o) {
       this.o = o;
       _.bindAll(this, 'scroll', 'setup');
+      return;
       this.setup();
       $(document).bind('scroll', this.scroll);
       return $(window).on('resize', this.setup);
