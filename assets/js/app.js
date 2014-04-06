@@ -36,16 +36,20 @@
   };
 
   KV.Views.FillerView = Backbone.View.extend({
-    backgrounds: ["bg-island.png", "bg-topographic.png"],
+    backgrounds: ["bg-island.png", "bg-topographic.png", "bg-painting.png"],
+    colours: ["#73B4B6", "#C93030", "#EEE"],
     initialize: function(o) {
-      var bg;
+      var bg, colour;
 
       this.o = o;
       bg = "url('http://assets.kastosvillas.com/assets/images/" + this.backgrounds[Math.floor(Math.random() * this.backgrounds.length)] + "\')";
+      colour = this.colours[Math.floor(Math.random() * this.colours.length)];
       console.log('bg', bg);
       console.log('@$el', this.$el);
+      console.log('colour', colour);
       return this.$el.css({
-        backgroundImage: bg
+        backgroundImage: bg,
+        backgroundColor: colour
       });
     }
   });
