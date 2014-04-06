@@ -1,11 +1,13 @@
 {block:Photoset}
     {block:Photos}
-        <img src="{PhotoURL-500}" width="{PhotoWidth-500}"height="{PhotoHeight-500}" />
+        <div class="photoset-photo">
+          <a class="image" style="background-image: url('{PhotoURL-400}');" data-photourl500="{PhotoURL-400}" {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}></a>
         {block:Caption}
-            {Caption}
+            <div class="photo-caption">{Caption}</div>
         {/block:Caption}
+      </div>
     {/block:Photos}
     {block:Caption}
-        {Caption}
+      <div class="photoset-caption">{Caption}</div>
     {/block:Caption}
 {/block:Photoset}

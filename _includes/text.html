@@ -1,6 +1,8 @@
-{block:Text}
-	{block:Title}
-		<h1>Title</h1>
-	{/block:Title}
-	<div class="body">{Body}</div>
-{/block:Text}
+<div class="internal">
+	{block:Text}
+		{block:Title}
+			<h1><a href="{Permalink}">{Title}</a></h1>
+		{/block:Title}
+		<div class="body">{Body}</div>
+	{/block:Text}
+</div>

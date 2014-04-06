@@ -3,16 +3,9 @@ KV.Views = {}
 
 KV.App =
 	init: ->
-		_.bindAll @, 'setWindowHeight', 'extendViews'
+		_.bindAll @, 'extendViews'
 		@appModel = new Backbone.Model()
-		$(window).on 'resize', @setWindowHeight
-		@setWindowHeight()
 		@extendViews()
-
-	setWindowHeight: ->
-		h = $(window).height()
-		$('.window-height').css
-			'height': "#{h}px"
 
 	extendViews: ->
 		_.each $('.js-extend'), (el) =>

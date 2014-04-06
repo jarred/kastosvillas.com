@@ -8,19 +8,9 @@
 
   KV.App = {
     init: function() {
-      _.bindAll(this, 'setWindowHeight', 'extendViews');
+      _.bindAll(this, 'extendViews');
       this.appModel = new Backbone.Model();
-      $(window).on('resize', this.setWindowHeight);
-      this.setWindowHeight();
       return this.extendViews();
-    },
-    setWindowHeight: function() {
-      var h;
-
-      h = $(window).height();
-      return $('.window-height').css({
-        'height': "" + h + "px"
-      });
     },
     extendViews: function() {
       var _this = this;
@@ -44,6 +34,21 @@
       });
     }
   };
+
+  KV.Views.FillerView = Backbone.View.extend({
+    backgrounds: ["bg-island.png", "bg-topographic.png"],
+    initialize: function(o) {
+      var bg;
+
+      this.o = o;
+      bg = "url('http://assets.kastosvillas.com/assets/images/" + this.backgrounds[Math.floor(Math.random() * this.backgrounds.length)] + "\')";
+      console.log('bg', bg);
+      console.log('@$el', this.$el);
+      return this.$el.css({
+        backgroundImage: bg
+      });
+    }
+  });
 
   KV.Views.MapView = Backbone.View.extend({
     initialize: function(o) {
@@ -113,6 +118,13 @@
     },
     setup: function() {
       return this.windowH = $(window).height();
+    }
+  });
+
+  KV.Views.PostView = Backbone.View.extend({
+    initialize: function(o) {
+      this.o = o;
+      return console.log(this.$el.height());
     }
   });
 

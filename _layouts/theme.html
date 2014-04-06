@@ -16,17 +16,19 @@
         <div id="grid">
             <div id="left">
                 <a href="/" class="logo"><div class="image"></div></a>
+                {block:HasPages}
                 <div class="nav">
                     <ul>
-                        <li><a href="#">The Island</a></li>
-                        <li><a href="#">The Villas</a></li>
-                        <li><a href="#">Contact</a></li>
+                      {block:Pages}
+                        <li><a href="{URL}">{Label}</a></li>
+                      {/block:Pages}
                     </ul>
                 </div>
+                {/block:HasPages}
             </div>
             <div id="posts">
                 {block:Posts}
-                    <div class="post {TagsAsClasses} {PostType}" data-id="{PostID}">
+                    <div class="post js-extend {TagsAsClasses} {PostType} {block:Photoset}photoset{/block:Photoset}" data-id="{PostID}" data-view="PostView">
                         {% include text.html %}
                         {% include photo.html %}
                         {% include panorama.html %}
@@ -37,6 +39,7 @@
                         {% include audio.html %}
                         {% include video.html %}
                     </div>
+                    <div class="filler js-extend" data-view="FillerView"></div>
                 {/block:Posts}
                 <div class="clearfix"></div>
             </div>

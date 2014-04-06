@@ -1040,23 +1040,32 @@ table {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 10px;
 }
-/* line 40, ../_scss/ui/_left.scss */
+/* line 41, ../_scss/ui/_left.scss */
 #left ul {
   padding: 20px;
+  text-align: center;
 }
-/* line 43, ../_scss/ui/_left.scss */
+/* line 45, ../_scss/ui/_left.scss */
 #left a {
-  font: 400 28px/34px "Verveine-Regular", Georgia, "Times New Roman", Serif;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  font: 400 28px/34px Georgia, "Times New Roman", Serif;
   color: #FFF;
   text-decoration: none;
+  border-bottom: 3px solid #FFF;
 }
-/* line 47, ../_scss/ui/_left.scss */
+/* line 51, ../_scss/ui/_left.scss */
 #left a:hover {
   color: #666;
+  border-bottom-color: transparent;
 }
 
-/* line 53, ../_scss/ui/_left.scss */
+/* line 58, ../_scss/ui/_left.scss */
 #posts {
   padding-left: 240px;
   padding-top: 40px;
@@ -1066,7 +1075,7 @@ table {
 /* line 1, ../_scss/ui/_post.scss */
 .post {
   float: left;
-  margin-bottom: 240px;
+  display: inline;
   position: relative;
   z-index: 10;
 }
@@ -1085,13 +1094,138 @@ table {
   width: 100%;
 }
 
-/* line 20, ../_scss/style.scss */
+/* line 17, ../_scss/ui/_post.scss */
+.post.quote {
+  width: 480px;
+}
+/* line 19, ../_scss/ui/_post.scss */
+.post.quote .internal {
+  margin: 20px;
+  padding: 20px;
+  background: #4f643b url(../images/bg-topographic.png) repeat;
+  background-attachment: fixed;
+  color: #FFF;
+  text-align: center;
+}
+/* line 27, ../_scss/ui/_post.scss */
+.post.quote blockquote {
+  margin: 0px;
+  padding: 0px;
+  font: 400 24px/30px Georgia, "Times New Roman", Serif;
+}
+/* line 32, ../_scss/ui/_post.scss */
+.post.quote p.source {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+}
+/* line 36, ../_scss/ui/_post.scss */
+.post.quote p.source a {
+  color: #FFF;
+}
+
+/* line 43, ../_scss/ui/_post.scss */
+.post.photoset {
+  width: auto !important;
+  display: inline !important;
+}
+/* line 46, ../_scss/ui/_post.scss */
+.post.photoset .photoset-photo {
+  width: 240px;
+  height: 240px;
+  float: left;
+  position: relative;
+}
+/* line 51, ../_scss/ui/_post.scss */
+.post.photoset .photoset-photo .image {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  border: 0px;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+/* line 63, ../_scss/ui/_post.scss */
+.post.photoset .photoset-photo .image:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+/* line 67, ../_scss/ui/_post.scss */
+.post.photoset .photoset-photo img {
+  width: 100%;
+}
+/* line 70, ../_scss/ui/_post.scss */
+.post.photoset .photoset-photo .photo-caption {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+}
+/* line 78, ../_scss/ui/_post.scss */
+.post.photoset .photoset-caption {
+  float: left;
+  width: 440px;
+  padding: 20px;
+  font: 400 16px/20px Georgia, "Times New Roman", Serif;
+}
+
+/* line 87, ../_scss/ui/_post.scss */
+.post.text .body {
+  padding: 20px;
+  width: 680px;
+  float: left;
+  background-color: #FFF;
+  font: 400 17px/20px Georgia, "Times New Roman", Serif;
+}
+/* line 94, ../_scss/ui/_post.scss */
+.post.text h1 {
+  font: 400 36px/34px "Theinhardt-Bold", "Helvetica Neue", Sans-Serif;
+  display: block;
+  float: left;
+  width: 240px;
+  height: 242px;
+  background-color: #444;
+  text-align: center;
+  margin: 0px;
+  margin-top: -40px;
+  margin-left: -1px;
+  position: relative;
+  background: #4f643b url(../images/bg-topographic.png) repeat;
+}
+/* line 107, ../_scss/ui/_post.scss */
+.post.text h1 a {
+  color: #FFF;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  right: 0px;
+  text-decoration: none;
+}
+
+/* line 1, ../_scss/ui/_filler.scss */
+.filler {
+  width: 480px;
+  height: 480px;
+  background-position: center center;
+  background-attachment: fixed;
+  float: left;
+  background-color: #FF3300;
+}
+
+/* line 22, ../_scss/style.scss */
 html {
   font-size: 13px;
   background: #f9f9f9 url("../images/grid-lines.png") repeat top left;
 }
 
-/* line 25, ../_scss/style.scss */
+/* line 27, ../_scss/style.scss */
 .hide {
   display: none !important;
 }

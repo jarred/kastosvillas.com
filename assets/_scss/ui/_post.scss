@@ -1,6 +1,6 @@
 .post{
 	float: left;
-	margin-bottom: 240px;
+	display: inline;
 	position: relative;
 	z-index: 10;
 }
@@ -11,6 +11,107 @@
 		img{
 			display: block;
 			width: 100%;
+		}
+	}
+}
+.post.quote{
+	width: 480px;
+	.internal{
+		margin: 20px;
+		padding: 20px;
+		background: $darkGreen url(../images/bg-topographic.png) repeat;
+		background-attachment: fixed;
+		color: #FFF;
+		text-align: center;
+	}
+	blockquote{
+		margin: 0px;
+		padding: 0px;
+		font: 400 24px/30px $serif;
+	}
+	p.source{
+		margin: 0px;
+		padding: 0px;
+		margin-top: 20px;
+		a{
+			color: #FFF;
+		}
+	}
+}
+
+
+.post.photoset{
+	width: auto !important;
+	display: inline !important;
+	.photoset-photo{
+		width: 240px;
+		height: 240px;
+		float: left;
+		position: relative;
+		.image{
+			position: absolute;
+			display: block;
+			text-decoration: none;
+			border: 0px;
+			left: 10px;
+			top: 10px;
+			right: 10px;
+			bottom: 10px;
+			background-size: contain;
+			background-position: top center;
+			background-repeat: no-repeat;
+			&:hover{
+				@include opacity(.3);
+			}
+		}
+		img{
+			width: 100%;
+		}
+		.photo-caption{
+			position: absolute;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+			text-align: center;
+		}
+	}
+	.photoset-caption{
+		float: left;
+		width: 440px;
+		padding: 20px;
+		font: 400 16px/20px $serif;
+	}
+}
+
+.post.text{
+	.body{
+		padding: 20px;
+		width: 680px;
+		float: left;
+		background-color: #FFF;
+		font: 400 17px/20px $serif;
+	}
+	h1{
+		font: 400 36px/34px $sans;
+		display: block;
+		float: left;
+		width: 240px;
+		height: 242px;
+		background-color: #444;
+		text-align: center;
+		margin: 0px;
+		margin-top: -40px;
+		margin-left: -1px;
+		position: relative;
+		background: $darkGreen url(../images/bg-topographic.png) repeat;
+		a{
+			color: #FFF;
+			display: block;
+			position: absolute;
+			top: 80px;
+			left: 0px;
+			right: 0px;
+			text-decoration: none;
 		}
 	}
 }

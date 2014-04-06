@@ -36,16 +36,21 @@
 		list-style-type: none;
 		padding: 0px;
 		margin: 0px;
+		margin-bottom: 10px;
 	}
 	ul{
 		padding: 20px;
+		text-align: center;
 	}
 	a{
-		font: 400 28px/34px $script;
+		@include inline-block;
+		font: 400 28px/34px $serif;
 		color: #FFF;
 		text-decoration: none;
+		border-bottom: 3px solid #FFF;
 		&:hover{
 			color: #666;
+			border-bottom-color: transparent;
 		}
 	}
 }
