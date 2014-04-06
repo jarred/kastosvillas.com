@@ -29,15 +29,15 @@
             <div id="posts">
                 {block:Posts}
                     <div class="post js-extend {TagsAsClasses} {PostType} {block:Photoset}photoset{/block:Photoset}" data-id="{PostID}" data-view="PostView">
-                        {% include text.html %}
-                        {% include photo.html %}
-                        {% include panorama.html %}
-                        {% include photoset.html %}
-                        {% include quote.html %}
-                        {% include link.html %}
-                        {% include chat.html %}
-                        {% include audio.html %}
-                        {% include video.html %}
+                      {% include text.html %}
+                      {% include photo.html %}
+                      {% include panorama.html %}
+                      {% include photoset.html %}
+                      {% include quote.html %}
+                      {% include link.html %}
+                      {% include chat.html %}
+                      {% include audio.html %}
+                      {% include video.html %}
                     </div>
                     <div class="filler js-extend" data-view="FillerView"></div>
                 {/block:Posts}

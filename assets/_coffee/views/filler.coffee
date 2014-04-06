@@ -15,9 +15,6 @@ KV.Views.FillerView = Backbone.View.extend
   initialize: (@o) ->
     bg = "url('http://assets.kastosvillas.com/assets/images/" + @backgrounds[Math.floor(Math.random() * @backgrounds.length)] + "\')"
     colour = @colours[Math.floor(Math.random() * @colours.length)]
-    console.log 'bg', bg
-    console.log '@$el', @$el
-    console.log 'colour', colour
     @$el.css
       backgroundImage: bg
-      backgroundColor: colour
+      # backgroundColor: colour
