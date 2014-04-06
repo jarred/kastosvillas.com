@@ -44,12 +44,8 @@
       this.o = o;
       bg = "url('http://assets.kastosvillas.com/assets/images/" + this.backgrounds[Math.floor(Math.random() * this.backgrounds.length)] + "\')";
       colour = this.colours[Math.floor(Math.random() * this.colours.length)];
-      console.log('bg', bg);
-      console.log('@$el', this.$el);
-      console.log('colour', colour);
       return this.$el.css({
-        backgroundImage: bg,
-        backgroundColor: colour
+        backgroundImage: bg
       });
     }
   });

@@ -1216,6 +1216,8 @@ table {
   background-position: center center;
   background-attachment: fixed;
   float: left;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 
 /* line 22, ../_scss/style.scss */
