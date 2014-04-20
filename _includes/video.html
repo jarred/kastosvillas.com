@@ -1,4 +1,7 @@
 {block:Video}
-	<div class="video">{Video-700}</div>
+	<div class="internal">
+		<div class="video">{Video-700}</div>
+	</div>
 	{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+	{% include meta.html %}
 {/block:Video}

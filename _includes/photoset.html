@@ -1,13 +1,16 @@
 {block:Photoset}
-    {block:Photos}
-        <div class="photoset-photo">
-          <a class="image" style="background-image: url('{PhotoURL-400}');" data-photourl500="{PhotoURL-400}" {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}></a>
-        {block:Caption}
-            <div class="photo-caption">{Caption}</div>
-        {/block:Caption}
-      </div>
-    {/block:Photos}
+  <div class="internal">
+    <div class="photoset-grid" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">
+      {block:Photos}
+        <img src="{PhotoURL-500}"
+          {block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}
+          width="{PhotoWidth-500}" height="{PhotoHeight-500}"
+          {block:Caption}alt="{Caption}"{/block:caption} />
+      {/block:Photos}
+    </div>
+  </div>
     {block:Caption}
-      <div class="photoset-caption">{Caption}</div>
+      <div class="photoset-caption caption">{Caption}</div>
     {/block:Caption}
+    {% include meta.html %}
 {/block:Photoset}

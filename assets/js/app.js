@@ -124,7 +124,12 @@
   KV.Views.PostView = Backbone.View.extend({
     initialize: function(o) {
       this.o = o;
-      return console.log(this.$el.height());
+      this.model = new Backbone.Model(this.$el.data());
+      return this.$('.photoset-grid').photosetGrid({
+        highresLinks: true,
+        rel: $('.photoset-grid').attr('data-id'),
+        gutter: '20px'
+      });
     }
   });
 

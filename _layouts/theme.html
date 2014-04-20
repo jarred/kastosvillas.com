@@ -28,22 +28,19 @@
             </div>
             <div id="posts">
                 {block:Posts}
-                    <div class="post js-extend {TagsAsClasses} {PostType} {block:Photoset}photoset{/block:Photoset}" data-id="{PostID}" data-view="PostView">
+                    <div class="post js-extend {TagsAsClasses} {PostType} {block:Photoset}photoset{/block:Photoset}" data-id="{PostID}" data-view="PostView" data-type="{PostType}" {block:Photoset}data-type="photoset"{/block:Photoset}>
                       {% include text.html %}
                       {% include photo.html %}
                       {% include panorama.html %}
                       {% include photoset.html %}
                       {% include quote.html %}
                       {% include link.html %}
-                      {% include chat.html %}
                       {% include audio.html %}
                       {% include video.html %}
                     </div>
-                    <div class="filler js-extend" data-view="FillerView"></div>
                 {/block:Posts}
                 <div class="clearfix"></div>
             </div>
-            {% include bg.html %}
         </div>
 
         <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqFxhN4iTpS2CXEj-VZiQ9XYYeFKuzI7k&sensor=false"></script> -->

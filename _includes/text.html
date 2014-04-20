@@ -1,8 +1,9 @@
-<div class="internal">
-	{block:Text}
+{block:Text}
+	<div class="internal">
 		{block:Title}
 			<h1><a href="{Permalink}">{Title}</a></h1>
 		{/block:Title}
 		<div class="body">{Body}</div>
-	{/block:Text}
-</div>
+		{% include meta.html %}
+	</div>
+{/block:Text}
