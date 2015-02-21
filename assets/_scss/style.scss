@@ -1,5 +1,4 @@
 @import "libs/_normalize";
-@import "libs/_leaflet";
 @import "helpers/_misc";
 @import "helpers/_mixin-clearfix";
 
@@ -9,15 +8,6 @@ $sans: 'Theinhardt-Bold', "Helvetica Neue", Sans-Serif;
 $serif: Georgia, "Times New Roman", Serif;
 $script: 'Verveine-Regular', $serif;
 $margin: 40px;
-
-@import "layout/_grid";
-// @import "ui/_buttons";
-@import "ui/_map";
-@import "ui/_left";
-@import "ui/_post";
-@import "ui/_filler";
-// @import "ui/_nav";
-// @import "ui/_intro";
 
 html{
 	font-size: 13px;
