@@ -14,6 +14,9 @@ html{
 	background: #F9F9F9 url('../images/grid-lines.png') repeat top left;
 }
 
+@import "ui/_slideshow";
+@import "ui/_nav";
+
 .hide{
 	display: none !important;
 }

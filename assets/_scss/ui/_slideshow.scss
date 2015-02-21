@@ -1,0 +1,20 @@
+.slideshow{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  top: 0;
+  background-color: $black;
+}
+
+.slideshow-preloader{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-color: #FFF;
+  border-radius: 50%;
+}
