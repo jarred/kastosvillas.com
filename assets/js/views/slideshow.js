@@ -8,6 +8,7 @@ var SlideshowView = Backbone.View.extend({
   currentImage: null,
   initialize: function(){
     this.model = new Backbone.Model(JSON.parse(this.$('.js-slideshow-data').html()));
+    this.model.set('images', _.shuffle(this.model.get('images')));
     this.showImage(0);
   },
   showImage: function(index){
