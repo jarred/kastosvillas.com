@@ -6,7 +6,8 @@ var Backbone    = require('backbone');
 Backbone.$ = $;
 
 KastosVillas.Views = {
-  Slideshow: require('./views/slideshow.js')
+  Slideshow:  require('./views/slideshow.js'),
+  About:      require('./views/about.js')
 };
 
 KastosVillas.App = {
@@ -24,6 +25,8 @@ KastosVillas.App = {
     });
   }
 }
+
+console.log(KastosVillas);
 
 KastosVillas.App.init();
 module.exports = KastosVillas;
