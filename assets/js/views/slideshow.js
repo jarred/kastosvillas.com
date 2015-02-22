@@ -23,7 +23,7 @@ var SlideshowView = Backbone.View.extend({
         opacity: 0
       });
       _this.$el.append($image);
-      TweenMax.to($image, 2, {
+      TweenMax.to($image, 1, {
         opacity: 1,
         ease: Circ.easeOut,
         onComplete: function(){
