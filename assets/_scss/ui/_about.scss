@@ -1,0 +1,22 @@
+.about-content{
+  position: absolute;
+  width: calc(50% - 60px);
+  padding-top: 172px;
+  padding-left: 30px;
+  padding-right: 30px;
+  bottom: 60px;
+  top: 0;
+  overflow: auto;
+  font: 400 15px/20px $sans;
+}
+
+.about-map{
+  position: absolute;
+  width: 50%;
+  height: calc(100% - 60px);
+  right: 0;
+  top: 0;
+  bottom: 60px;
+  width: 50%;
+  background-color: $black;
+}
