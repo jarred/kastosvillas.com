@@ -1,0 +1,17 @@
+.logo{
+  display: block;
+  position: fixed;
+  top: 30px;
+  width: 220px;
+  height: 112px;
+  background-image: url('/assets/images/logo-black.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+  left: 50%;
+  margin-left: -110px;
+}
+
+.logo--white{
+  background-image: url('/assets/images/logo-white.png');
+}

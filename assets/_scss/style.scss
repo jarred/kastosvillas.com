@@ -11,11 +11,12 @@ $margin: 40px;
 
 html{
 	font-size: 13px;
-	background: #F9F9F9 url('../images/grid-lines.png') repeat top left;
+	background-color: #FFF;
 }
 
 @import "ui/_slideshow";
 @import "ui/_nav";
+@import "ui/_logo";
 
 .hide{
 	display: none !important;

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jarred/kastosvillas.com",
   "dependencies": {
+    "JSON": "^1.0.0",
     "backbone": "^1.1.2",
     "del": "^1.1.1",
     "gsap": "^1.15.1",

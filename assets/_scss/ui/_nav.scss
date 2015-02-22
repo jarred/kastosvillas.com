@@ -4,4 +4,33 @@
   right: 0;
   bottom: 0;
   height: 60px;
+  font-size: 15px;
+}
+
+.nav ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav a{
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: $black;
+  border-right: 1px dotted #DDD;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.nav li:last-of-type a{
+  border-right: none;
 }
