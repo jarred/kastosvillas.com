@@ -12,9 +12,10 @@ var AboutView = Backbone.View.extend({
     console.log(this);
     this.map = new Gmaps({
       div: '#js-about-map',
-      lat: 38.5727023,
-      lng: 20.917293,
-      zoom: 13
+      lat: 38.5687836,
+      lng: 20.908864,
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.SATELLITE
     })
   }
 });
